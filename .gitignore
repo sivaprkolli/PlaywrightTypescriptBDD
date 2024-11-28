@@ -4,3 +4,7 @@ screenshots
 node_modules
 assets
 index.html
+features/*.html
+/playwright-report/
+/blob-report/
+/playwright/.cache/

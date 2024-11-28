@@ -7,7 +7,8 @@ Given('User on products screen', async function () {
         await expect(title).toEqual("Swag Labs")
   });
 
-Then('Verify products heading', async function () {
+Then('Verify products heading', async ()=> {
+      await pageFixture.page.waitForTimeout(5000);
         let productsHeading  = await pageFixture.page.locator(".title").textContent();
         await expect(productsHeading).toEqual("Products")
   });
